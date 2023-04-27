@@ -3,6 +3,7 @@ import Input from "./components/input";
 import Hover from "./components/hover";
 import List from "./components/list";
 import Search from "./components/search";
+import Request from "./components/request";
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       <Input />
       <Search />
       <Hover />
-      <List />
+      <Request />
+      {/* <List /> */}
     </div>
   );
 }

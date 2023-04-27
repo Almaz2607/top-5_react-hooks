@@ -3,9 +3,9 @@ import useDebounce from "../hooks/useDebounce";
 
 const Search = () => {
   const [value, setValue] = useState("");
-  const debouncedSearch = useDebounce(search, 500);
+  const debouncedSearch = useDebounce(searchQuery, 500);
 
-  function search(query) {
+  function searchQuery(query) {
     fetch("https://jsonplaceholder.typicode.com/todos?query=" + query)
       .then((response) => response.json())
       .then((json) => console.log(json));
